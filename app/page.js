@@ -1,15 +1,4 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import { notFound } from 'next/navigation';
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <h1>Home</h1>
-      </div>
-    </main>
-  )
+    return <h1>Home</h1>;
 }

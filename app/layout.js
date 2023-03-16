@@ -1,5 +1,6 @@
 import './globals.css'
 import Navigation from './components/Navigation'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
         <header>
           <Navigation />
         </header>
-        {children}
+        <div className="container">
+          {children}
+        </div>
       </body>
     </html>
   )
