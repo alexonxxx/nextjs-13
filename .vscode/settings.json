@@ -1,0 +1,16 @@
+{
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "vue",
+        "javascript",
+        "javascriptreact",
+        "html"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "editor.formatOnSave": true,
+}
