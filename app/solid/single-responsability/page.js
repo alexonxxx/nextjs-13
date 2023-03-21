@@ -2,7 +2,9 @@
 import ContentPage from './content-page';
 
 const fetchPosts = () => {
-    return fetch("https://jsonplaceholder.typicode.com/posts", { next: { revalidate: 60 } }).then(res => res.json());
+    //https://jsonplaceholder.typicode.com
+    //
+    return fetch("https://github.com/sponsors/typicodefsafsda", { next: { revalidate: 60 } }).then(res => res.json());
 }
 
 export default async function Page() {
@@ -10,4 +12,13 @@ export default async function Page() {
     const posts = await fetchPosts();
     // Forward fetched data to your Client Component
     return <ContentPage posts={posts} />;
+
+    // try {
+    //     const posts = await fetchPosts();
+    //     // Forward fetched data to your Client Component
+    //     return <ContentPage posts={posts} />;
+    // } catch (err) {
+    //     return <div>Error component</div>;
+    // }
+
 }
